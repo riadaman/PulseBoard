@@ -11,6 +11,6 @@ class Project extends Model
         'owner_email'
     ];
       public function deploymentCheck(){
-        return $this->hasMany(DeploymentChecks::class);
+        return $this->belongsTo(DeploymentChecks::class);
     }
 }
